@@ -34,6 +34,7 @@ class Main extends Component {
       if (!timerStore.hasStarted) {
         firstButton = null;
       }
+    } else {
       secondButton = (
         <button
           style={{ ...buttonStyle, color: '#fd3d2a' }}
@@ -51,13 +52,15 @@ class Main extends Component {
           lap
       </button>
       );
-      return (
-        <div>
-          {firstButton}
-          {secondButton}
-        </div>
-      );
     }
+
+    return (
+      <div>
+        {firstButton}
+        {secondButton}
+      </div>
+    );
+
   }
   render() {
     const { timerStore } = this.props;

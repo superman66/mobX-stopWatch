@@ -32,7 +32,7 @@ export class TimerStore {
   }
 
   @action startTimer() {
-    if (!this.isRunning) {
+    if (this.isRunning) {
       return;
     }
     this.isRunning = true;
@@ -50,7 +50,8 @@ export class TimerStore {
   }
 
   @action lapTimer() {
-    this.laps.push(new TimerStore(this.timer.totalMilliSeconds - this.lapTime));
+    this.laps.push(new TimerModel(this.timer.totalMilliSeconds - this.lapTime));
+    console.log(this.laps);
   }
 
   @computed get lapData() {

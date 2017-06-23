@@ -26,7 +26,7 @@ class TimerModel {
   }
 
   @computed get display() {
-    const tenMilliSeconds = parseInt(this.milliseconds / 10, 10);
+    const tenMilliSeconds = parseInt(this.totalMilliSeconds / 10, 10);
     const seconds = parseInt(tenMilliSeconds / 100, 10);
     const minutes = parseInt(seconds / 60, 10);
     return `${minutes} : ${format(seconds % 60, '00')} : ${format(tenMilliSeconds % 100, '00')} `;
