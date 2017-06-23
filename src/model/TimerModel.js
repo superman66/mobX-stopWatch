@@ -21,15 +21,15 @@ class TimerModel {
     this.milliseconds = this.saveMilliseconds = 0;
   }
 
-  @computed get totalMilliSeconds(){
+  @computed get totalMilliSeconds() {
     return this.milliseconds + this.saveMilliseconds;
   }
 
   @computed get display() {
-    const tenMilliseconds = parseInt(this.milliseconds / 10, 10);
-    const seconds = parseInt(tenMilliseconds / 100, 10);
+    const tenMilliSeconds = parseInt(this.milliseconds / 10, 10);
+    const seconds = parseInt(tenMilliSeconds / 100, 10);
     const minutes = parseInt(seconds / 60, 10);
-    return `${minutes} : ${format(seconds % 60, '00')} :  ${format(tenMilliSeconds % 100, '00')}`;
+    return `${minutes} : ${format(seconds % 60, '00')} : ${format(tenMilliSeconds % 100, '00')} `;
   }
 }
 

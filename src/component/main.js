@@ -60,6 +60,7 @@ class Main extends Component {
     }
   }
   render() {
+    const { timerStore } = this.props;
     return (
       <div style={{ fontSize: 30 }}>
         <div
@@ -69,8 +70,7 @@ class Main extends Component {
         </div>
         <div>
           <div style={mainStyle.buttons}>
-            {firstButton}
-            {secondButton}
+            {this.renderButton()}
           </div>
           <div>
             {timerStore.lapData.map((el) =>

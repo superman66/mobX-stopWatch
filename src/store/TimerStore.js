@@ -11,7 +11,7 @@ export class TimerStore {
 
   constructor() {
     this.isRunning = false;
-    this.timer = new Timer();
+    this.timer = new TimerModel();
     this.laps = [];
   }
 
@@ -50,7 +50,7 @@ export class TimerStore {
   }
 
   @action lapTimer() {
-    this.laps.push(new Timer(this.timer.totalMilliSeconds - this.lapTime));
+    this.laps.push(new TimerStore(this.timer.totalMilliSeconds - this.lapTime));
   }
 
   @computed get lapData() {
