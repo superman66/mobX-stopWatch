@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { observer } from 'mobx-react'
 
 import TimerDisplay from './TimerDisplay'
+import { mainStyle, buttonStyle } from '../styles'
 
 @observer
 class Main extends Component {

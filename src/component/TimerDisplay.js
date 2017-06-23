@@ -1,6 +1,6 @@
 import React from 'react';
 import { observer } from 'mobx-react';
-import { timerStyle } from './styles';
+import { timerStyle } from '../styles';
 
 export const TimerDisplay = observer(({ leftText, rightText }) => {
   return (

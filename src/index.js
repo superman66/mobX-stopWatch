@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import Main from './main'
+import Main from './component/Main'
 
 import { TimerStore } from './store/TimerStore'
 import { useStrict } from 'mobx'
