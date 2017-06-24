@@ -53,7 +53,6 @@
   },
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server  --inline --progress --colors --port 3000 --host 0.0.0.0 --devtool source-map",
-    "test": "jest --colors",
-    "coverage": "jest --colors --coverage"
+    "build": "rm -rf build/ && NODE_ENV=production webpack --progress --colors"
   }
 }

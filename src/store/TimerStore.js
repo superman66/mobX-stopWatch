@@ -61,7 +61,6 @@ export class TimerStore {
         text: `Lap ${i + 1}`,
       });
     }
-    console.log(data);
     return data.reverse();
   }
 
