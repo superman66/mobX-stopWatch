@@ -45,6 +45,7 @@
     "eslint-plugin-babel": "^3.2.0",
     "eslint-plugin-react": "^5.0.1",
     "extract-text-webpack-plugin": "^2.0.0",
+    "gh-pages": "^1.0.0",
     "html-webpack-plugin": "^2.24.0",
     "jest": "^19.0.2",
     "style-loader": "^0.16.1",
@@ -53,6 +54,7 @@
   },
   "scripts": {
     "dev": "NODE_ENV=development webpack-dev-server  --inline --progress --colors --port 3000 --host 0.0.0.0 --devtool source-map",
-    "build": "rm -rf build/ && NODE_ENV=production webpack --progress --colors"
+    "build": "rm -rf build/ && NODE_ENV=production webpack --progress --colors",
+    "publish": "node gh-pages.js"
   }
 }
