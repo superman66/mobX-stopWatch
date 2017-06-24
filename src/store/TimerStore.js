@@ -51,7 +51,6 @@ export class TimerStore {
 
   @action lapTimer() {
     this.laps.push(new TimerModel(this.timer.totalMilliSeconds - this.lapTime));
-    console.log(this.laps);
   }
 
   @computed get lapData() {
@@ -62,6 +61,7 @@ export class TimerStore {
         text: `Lap ${i + 1}`,
       });
     }
+    console.log(data);
     return data.reverse();
   }
 

@@ -62,6 +62,18 @@ class Main extends Component {
     );
 
   }
+  renderLapData() {
+    const { timerStore } = this.props;
+    const laps = timerStore.lapData.map((lap) => {
+      return (
+        <TimerDisplay
+          key={lap.lap.id}
+          leftText={lap.text}
+          rightText={lap.lap.display}
+        />
+      )
+    })
+  }
   render() {
     const { timerStore } = this.props;
     return (

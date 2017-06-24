@@ -3,14 +3,14 @@ export const timerStyle = {
     borderBottom: '1px solid #d9dae0',
     display: 'flex',
   },
-  letf: {
+  left: {
     fontSize: 30,
     fontFamily: 'HelveticaNeue-UltraLight',
     color: '#7f8083',
     padding: 20,
     flex: 1,
   },
-  rigth: {
+  right: {
     fontSize: 30,
     padding: 20,
     fontFamily: 'HelveticaNeue-UltraLight',
