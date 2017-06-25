@@ -1,4 +1,3 @@
-# mobX stopWatch
 # MobX 学习笔记
 ## 什么是 MobX？
 MobX 是简单、可拓展状态管理，类似于 Redux。但是 MobX 的特点在于：函数响应式编程（TFRP）。（关于函数式编程结尾列出相关资料，可做进一步阅读）
