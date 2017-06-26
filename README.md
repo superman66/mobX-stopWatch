@@ -27,7 +27,8 @@ MobX 区分了两种衍生的类型：
 
 
 ## 拓展阅读
+* [[JavaScript] 你所不知道的响应式编程](http://www.jianshu.com/p/5a097172f55a)
 * [《JavaScript函数式编程》](https://book.douban.com/subject/26579320/)
-* [JS函数式编程指南](http://t.cn/RyZdymZ)
+* [《JS函数式编程指南》](http://t.cn/RyZdymZ)
 * [MobX 高效响应](http://t.cn/RoSl1oO)
 * [Building a performant Stopwatch with MobX and React](http://t.cn/R5KszrG)
