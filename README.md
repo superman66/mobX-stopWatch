@@ -1,6 +1,6 @@
 # MobX 学习笔记
 ## 什么是 MobX？
-MobX 是简单、可拓展状态管理，类似于 Redux。但是 MobX 的特点在于：函数响应式编程（TFRP）。（关于函数式编程结尾列出相关资料，可做进一步阅读）
+MobX 是简单、可拓展状态管理，类似于 Redux。但是 MobX 的特点在于：函数响应式编程（TFRP）。（关于函数式响应编程结尾列出相关资料，可做进一步阅读）
 >任何源自应用状态的东西都应该自动获得。包括 UI、数据序列化、服务器通讯等。
 
 ![](screenshots/mobx.png)
@@ -28,7 +28,6 @@ MobX 区分了两种衍生的类型：
 
 ## 拓展阅读
 * [[JavaScript] 你所不知道的响应式编程](http://www.jianshu.com/p/5a097172f55a)
-* [《JavaScript函数式编程》](https://book.douban.com/subject/26579320/)
-* [《JS函数式编程指南》](http://t.cn/RyZdymZ)
+* [函数式编程和反应式编程（reactive programming）有什么区别？](https://www.zhihu.com/question/36431501)
 * [MobX 高效响应](http://t.cn/RoSl1oO)
 * [Building a performant Stopwatch with MobX and React](http://t.cn/R5KszrG)
